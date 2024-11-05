@@ -1,0 +1,68 @@
+// @use "../utils" as *;
+// .switchtab-container {
+//   height: 898px;
+//   width: 1124px;
+//   border: 1px solid #ededed;
+//   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+//   border-radius: 4px;
+//   margin: 29px 44px;
+//   .switchtab-navigatebar {
+//     height: 68px;
+//     width: 100%;
+//     border-bottom: 1px solid #a5a5a5;
+//     display: flex;
+//     .switchtab-items {
+//       height: 100%;
+//       width: 190px;
+//       cursor: pointer;
+//     }
+//     .switchtab-activeitem {
+//       border-bottom: 4px solid #8a3a93;
+//       transition: 0.45s ease;
+//     }
+//   }
+//   .switchtab-formbox {
+//     height: 830px;
+//     width: 100%;
+//   }
+// }
+/////
+
+@use "../utils" as *;
+.switchtab-container {
+  height: 898px;
+  width: 1124px;
+  border: 1px solid #ededed;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+  margin: 29px 44px;
+  .switchtab-navigatebar {
+    height: 68px;
+    width: 100%;
+    border-bottom: 1px solid #a5a5a5;
+    display: flex;
+    .switchtab-items {
+      height: 100%;
+      width: 190px;
+      cursor: pointer;
+      position: relative;
+    }
+    .hideswitch-tab {
+      position: absolute;
+      bottom: 0%;
+      display: none;
+      width: 0%;
+      border-radius: 10px;
+      height: 4px;
+      background-color: #8a3a93;
+    }
+    .active-switchtab{
+      display: block;
+      width: 100%;
+    }
+  }
+  .switchtab-formbox {
+    height: 830px;
+    width: 100%;
+  }
+}

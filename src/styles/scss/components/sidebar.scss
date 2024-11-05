@@ -1,0 +1,111 @@
+@use "../utils" as *;
+.sidebar-content-container {
+  width: 100%;
+}
+.box {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sidebar-dropdown {
+  position: relative;
+  width: 136px;
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tooltip-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .user-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.sidebar-dropdown .left-icon,
+.sidebar-dropdown .right-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: var(--tp-bg-bg);
+  border-radius: 40px;
+  transition: 0.09s;
+  left: 1px;
+}
+
+.sidebar-dropdown .left-icon {
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.sidebar-dropdown.active .left-icon {
+  transform: rotate(135deg);
+}
+
+.sidebar-dropdown .right-icon {
+  transform: rotate(-45deg);
+}
+
+.sidebar-dropdown.active .right-icon {
+  transform: rotate(-135deg);
+}
+
+.sidebar-dropdown .items {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 220px;
+  height: auto;
+  margin-top: 65px;
+  overflow: hidden;
+  visibility: hidden;
+  border: 1px solid var(--tp-border-input);
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #ffffff;
+}
+
+.sidebar-dropdown.active .items {
+  visibility: visible;
+}
+
+.sidebar-dropdown .items span {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tp-text-bgtext);
+  text-decoration: none;
+  margin-top: 2.5px;
+  z-index: 1;
+  overflow: hidden;
+  padding: 10px 12px;
+  &:hover {
+    background-color: #8a3a93;
+    color: #fef2ff;
+  }
+}
+.sidebar-drawericon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 16px;
+}
+.activate-sidebaricon {
+  margin-left: -5px;
+}

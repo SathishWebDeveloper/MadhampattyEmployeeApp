@@ -1,0 +1,112 @@
+@import "/src/styles/scss/main.scss";
+* {
+  font-family: "Montserrat" !important;
+  font-style: normal;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-boxend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flex-spcbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-colcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-colstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-logoimage {
+  width: 350px;
+  height: 80px;
+}
+.flex-spcbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mui-fontfamily {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+.gradient-titletext {
+  background: var(--tp-text-gradienttext);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: 600;
+}
+.back-pageicon {
+  width: 7px;
+  height: 13px;
+  margin-right: 8px;
+}
+.validate-error-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tp-text-error);
+  margin-bottom: 2px;
+  margin-left: 8px;
+}
+.response-error-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tp-text-error);
+}
+.apisuccess-image {
+  width: 100px;
+  height: 100px;
+}
+.password-toggleicon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.sidebar-logo {
+  width: 192px;
+  height: 44px;
+  cursor: pointer;
+}
+.continue-nextarrow {
+  width: 10px;
+  height: 18px;
+  margin-left: 10px;
+}
+.fallbackui-container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left, #8a3a93, #a23796, #bb3396, #d22d94, #e9278f);
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-search-cancel-button,
+input[type="password"]::-webkit-search-decoration,
+input[type="password"]::-webkit-search-results-button,
+input[type="password"]::-webkit-search-results-decoration {
+  appearance: none;
+}

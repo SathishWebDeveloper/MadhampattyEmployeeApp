@@ -1,0 +1,85 @@
+@use "../utils" as *;
+.otp-container {
+  width: 100%;
+  height: 100vh;
+  background-image: var(--tp-bg-webpage);
+  .otp-boxfield {
+    width: 550px;
+    height: 512px;
+    background-color: var(--tp-bg-form);
+    border-radius: 24px;
+    .otp-area {
+      width: 350px;
+      height: 390px;
+      .otp-imagebox {
+        width: 350px;
+        height: 80px;
+      }
+      .otp-formbox {
+        width: 340px;
+        height: 282px;
+        .otp-formonsubmit {
+          width: 340px;
+          height: 252px;
+          .otp-title {
+            height: 32px;
+          }
+          .otp-verifycontent {
+            height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--tp-text-bgtext);
+            text-align: center;
+          }
+          .otp-inputbox {
+            width: 241px;
+            height: 80px;
+            .otp-inputfield {
+              width: 242px;
+              height: 52px;
+              display: flex;
+              justify-content: space-between;
+              .otp-input {
+                width: 52px;
+                height: 50px;
+                border: 1px solid var(--tp-border-input);
+                border-radius: 12px;
+                padding: 0%;
+                text-align: center;
+                &:focus-visible {
+                  border: none !important;
+                  outline: 2px solid var(--tp-border-bg) !important;
+                }
+              }
+              .otp-error-outline {
+                outline: 1px solid red;
+                border: 1px solid red;
+              }
+            }
+            .otp-timefield {
+              width: 241px;
+              height: 20px;
+              font-size: 14px;
+              font-weight: 400px;
+              text-align: center;
+            }
+          }
+          .otp-buttonfield {
+            width: 340px;
+            height: 52px;
+          }
+          .otp-backpage {
+            height: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--tp-text-bgtext);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

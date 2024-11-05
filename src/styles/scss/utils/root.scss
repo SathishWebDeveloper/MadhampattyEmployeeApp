@@ -1,0 +1,12 @@
+@use "colors" as *;
+
+:root {
+  /**
+    @color declaration
+    */
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --tp-#{$color}-#{$shade}: #{$value};
+    }
+  }
+}

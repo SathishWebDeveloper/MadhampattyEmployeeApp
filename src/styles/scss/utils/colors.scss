@@ -1,0 +1,24 @@
+$colors: (
+  "text": (
+    "white": #ffffff,
+    "bgtext": #8a3a93,
+    "error": #ff0000,
+    "successtext": #953893,
+    "gradienttext":
+      linear-gradient(to left, #8a3a93, #a23796, #bb3396, #d22d94, #e9278f),
+  ),
+  "button": (
+    "gradientbg":
+      linear-gradient(to left, #8a3a93, #a23796, #bb3396, #d22d94, #e9278f),
+  ),
+  "bg": (
+    "webpage":
+      linear-gradient(to left, #8a3a93, #a23796, #bb3396, #d22d94, #e9278f),
+    "form": #fef2ff,
+    "bg": #8a3a93,
+  ),
+  "border": (
+    "input": #a5a5a5,
+    "bg": #8a3a93,
+  ),
+);

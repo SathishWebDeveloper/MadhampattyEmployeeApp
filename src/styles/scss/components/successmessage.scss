@@ -1,0 +1,10 @@
+.message-area{
+    width: 331px;
+    height: 180px;
+    .message-container{
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--tp-text-successtext);
+        text-align: center;
+    }
+}
